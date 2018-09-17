@@ -1,65 +1,15 @@
 # mvvm-flutter-widget README
 
-This is the README for your extension "mvvm-flutter-widget". After writing up a brief description, we recommend including the following sections.
+I was reading an article from Edrick Leong [(link)](https://medium.com/flutter-community/easily-navigate-through-your-flutter-code-by-separating-view-and-view-model-240026191106) on seperating flutter's `State` into `View` and `ViewModel` and I thought that it was a great idea. However, manually creating a folder and three files everytime I want to make a widget is a pain so I'm just making this extension for my own personal use. 
 
-## Features
+What this extension does it that it generate Flutter's widget file along with `View` and `ViewModel`.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+# How to use
 
-For example if there is an image subfolder under your extension project workspace:
+`CMD` + `Shift` + `P`
 
-\!\[feature X\]\(images/feature-x.png\)
+```
+Flutter MVVM Widget: Generate stateful widget
+```
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Input the widget name in camel case and then select the directory where the generated files should be placed.
