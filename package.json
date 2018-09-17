@@ -2,12 +2,12 @@
     "name": "mvvm-flutter-widget",
     "displayName": "MVVM Flutter Widget",
     "description": "Generate a Flutter stateful widget with seperate view and view model.",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "publisher": "panuavakul",
     "repository": {
-        "type" : "git",
-        "url" : "https://github.com/panuavakul/mvvm-flutter-widget.git"
-    },      
+        "type": "git",
+        "url": "https://github.com/panuavakul/mvvm-flutter-widget.git"
+    },
     "engines": {
         "vscode": "^1.27.0"
     },
