@@ -46,7 +46,7 @@ async function openFolderSelectionDialog(): Promise<string | undefined> {
     return new Promise<string | undefined>((resolve, reject) => {
         vscode.window.showOpenDialog(dialogOptions).then( folderUri => {
             if (folderUri && folderUri[0]) {
-                resolve(folderUri[0].path);
+                resolve(folderUri[0].fsPath);
             } else {
                 resolve(undefined);
             }
@@ -60,13 +60,14 @@ async function generateStatefulWidget() {
         vscode.window.showErrorMessage('Invalid widget name');
         return;
     }
+    
     const path = await openFolderSelectionDialog();
     if (path === undefined) {
         vscode.window.showErrorMessage('Invalid path');
     }
-
+    
     const folderAndFileName = widgetName.split(/(?=[A-Z])/).join('_').toLowerCase();
-    const folderPath = path + '/' + folderAndFileName;
+    const folderPath = path + '/' + folderAndFileName;       
 
     try {
         // TODO: Deal with the situation when folder exist
