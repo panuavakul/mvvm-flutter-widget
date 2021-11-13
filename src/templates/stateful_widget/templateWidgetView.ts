@@ -8,7 +8,7 @@ class ${widgetName}View extends ${widgetName}ViewModel {
   Widget build(BuildContext context) {
     
     // Replace this with your build function
-    return Text('Just a placeholder');
+    return const Text('Just a placeholder');
   }
 }
 
